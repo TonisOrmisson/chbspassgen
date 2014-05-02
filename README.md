@@ -97,6 +97,8 @@ Here is a demo: https://synapp.info/password-generator
 
 Caffeine. (Seriously, I did this project on a single night of insomnia. Stupid coffee and tea are to blame.)
 
+[Peter Norvig](http://norvig.com/) for being such an awesome proffesor (If you haven't checked out his [Stanford University course on AI](https://www.udacity.com/course/cs271) you ABSOLUTELY MUST) and publishing the [compilation of the 1/3 million most frequent English words](http://norvig.com/ngrams/count_1w.txt) on the [natural language corpus data ](http://norvig.com/ngrams/) from where the [word list](https://github.com/elcodedocle/chbspassgen/blob/master/top10000.txt) used by the default dictionary source for this project has been derived (and thanks to [Josh Kaufman](https://github.com/worldlywisdom) too for the tip).
+
 [Randall Munroe](http://xkcd.com). He is funny, smart, and inspiring. Thanks, Mr. Munroe.
 
 If you like this project, feel free to buy me a beer ;-)
