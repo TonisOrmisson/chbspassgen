@@ -13,11 +13,13 @@ so they could be used as passwords ([Correct, horse. That's a battery staple][2]
 
 This my first attempt at properly working with namespaces, interfaces and abstract classes in PHP, 
 plus something close to "meta programming" (In my own words; I suck at it and between that and the 
-abandoned intention of TDD implementing unit tests before the actual code (yeah, I know TDD saves time 
-but I'm too lazy for that unless I am being paid by the hour, which is an interesting contradiction).
+abandoned intention of TDD implementing unit tests before the actual code (yeah, I know TDD saves 
+time and increases quality, but I'm too lazy for that unless I am being paid by the hour, which is 
+an interesting contradiction...).
 
-Anyway, somehow I ended up turning a perfectly fine 200 linesscript I had crafted with care into this 
-monstruosity with phpdoc blocks that will make you want to poke your eyes out (I'll fix those blocks I promise...)
+Anyway, somehow I ended up turning a perfectly fine 200 linesscript I had crafted with care into 
+this monstruosity with phpdoc blocks that will make you want to poke your eyes out (I'll fix those 
+blocks, I promise...)
 
 ### How to use
 
@@ -92,7 +94,7 @@ Here is a demo: https://synapp.info/password-generator
 
 Caffeine. (Seriously, I did this project on a single night of insomnia. Stupid coffee and tea are to blame.)
 
-If you like this class, feel free to buy me a beer ;-)
+If you like this project, feel free to buy me a beer ;-)
 
 bitcoin: 1A7rSMddjwPbxFW71ZD724YaQLa8HCAJTT 
 
