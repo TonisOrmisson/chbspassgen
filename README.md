@@ -1,10 +1,10 @@
 chbspassgen
 ===========
 
-#####*generate strong passwords you can remember, with lots of entropy and stuff
+#####*generate strong passwords you can remember, with lots of entropy and stuff*
 
  Copyright (C) 2014 Gael Abadin<br/>
- License: [MIT Expat][1] / beerware
+ License: [MIT Expat][1]
  
 ### Motivation
 
@@ -83,7 +83,7 @@ Check the code (or generate the docs using phpdocumentor) if you want more info 
 
 ### Webapp
 
-There is also available a little test web app (passgenController.php, passgenClientController.js and password_generator.html) 
+There is also available a little test web app ([passgenController.php][3], [passgenClientController.js][4] and [password_generator.html][5]) 
 you can load by uploading all the files to a public folder on your web server and poiting your browser to password_generator.html
 
 Here is a demo: https://synapp.info/password-generator
@@ -103,5 +103,8 @@ paypal: http://goo.gl/RQVD5u
 
 Have fun.-
 
-[1]: https://raw.githubusercontent.com/elcodedocle/cryptosecureprng/master/LICENSE
+[1]: https://raw.githubusercontent.com/elcodedocle/chbspassgen/master/LICENSE
 [2]: http://xkcd.com/936/
+[3]: https://github.com/elcodedocle/chbspassgen/blob/master/passgenController.php
+[4]: https://github.com/elcodedocle/chbspassgen/blob/master/passgenClientController.js
+[5]: https://github.com/elcodedocle/chbspassgen/blob/master/password_generator.html
