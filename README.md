@@ -1,7 +1,7 @@
 chbspassgen
 ===========
 
-#####*generate strong passwords you can remember, with lots of entropy and stuff*
+#####*generate strong passwords you can easily remember, with lots of entropy and stuff*
 
  Copyright (C) 2014 Gael Abadin<br/>
  License: [MIT Expat][1]
