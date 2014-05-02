@@ -87,9 +87,9 @@ $password = $passwordGenerator->generatePassword(
   $level = 1,             // specify further parameters like this one
   $separators = '_ -',    // and this one
   $useVariations = true,  // and this one
-  $variations = array(    // and this one too (This system also works in the constructor)
-    'allcaps'=>true,
-    'capitalize'=>true
+  $variations = array(    // and this one too 
+    'allcaps'=>true,      // (BTW, this system also works in the constructor, where you can
+    'capitalize'=>true    // specify some params and leave others to their defaults using null)
   ) 
 );
 
