@@ -101,7 +101,7 @@ Caffeine. (Seriously, I did this project on a single night of insomnia. Stupid c
 
 [Randall Munroe](http://xkcd.com). He is funny, smart, and inspiring. Thanks, Mr. Munroe.
 
-If you like this project, feel free to buy me a beer ;-)
+And that's all for now, folks. If you like this project, feel free to buy me a beer ;-)
 
 bitcoin: 1A7rSMddjwPbxFW71ZD724YaQLa8HCAJTT 
 
