@@ -50,15 +50,33 @@ That's it. Pretty easy, huh? There are many parameters you can tinker with, thou
 // Here is a quick debrief on the class constructor parameters (See the phpdoc blocks for more info):
 
 $passwordGenerator = new synapp\info\tools\passwordgenerator\PasswordGenerator(
-  $dictionary = null, // the dictionary (null defaults to new Dictionary($this->defaultDictionaryFilename,$minReadWordsWordSize))
-  $level = 2, // set the level of entropy used when none is explicitly specified on the generatePassword() call
-  $separators = ' ', // a string of unique chars from where to randomly choose the password separator (defaults to $this->defaultSeparator, set to ' ')
-  $minEntropies = array(64,80,112,128), // an ascending ordered array of ints containing the minimum entropies for each level
-  $useVariations = false, // boolean, whether to use selected random variations on the password words to increase entropy
-  $variations = null, //(array of booleans which activate random variations on the words, increasing entropy. Valid keys: 'allcaps', 'capitalize', 'punctuate', 'addslashes'). Use null for defaults.
-  $minWordSize = 4, //(minimum length of the words used to create the password)
+  // the dictionary 
+  // (null defaults to new Dictionary($this->defaultDictionaryFilename,$minReadWordsWordSize))
+  // with $this->defaultDictionaryFilename set to 'top10000.txt'
+  $dictionary = null, 
+  // set the level of entropy used when none is explicitly specified on the generatePassword() call
+  // (null defaults to $this->defaultLevel, set to 2)
+  $level = 2, 
+  // a string of unique chars from where to randomly choose the password separator 
+  // (null defaults to $this->defaultSeparator, set to ' ')
+  $separators = ' ', 
+  // an ascending ordered array of ints containing the minimum entropies for each level
+  // (null defaults to $this->defaultMinEntropies, set to array(64,80,112,128))
+  $minEntropies = array(64,80,112,128), 
+  // boolean, whether to use selected random variations on the password words to increase entropy 
+  // defaults to true
+  $useVariations = false, 
+  // (array of booleans which activate random variations on the words, increasing entropy. 
+  // Valid keys: 'allcaps', 'capitalize', 'punctuate', 'addslashes'). Use null for defaults.
+  $variations = null, 
+  // Minimum length of the words used to create the password
+  // (null defaults to $this->defaultMinWordSize, set to 4)
+  $minWordSize = 4, 
+  // Minimum length of the words read from the dictionary source
+  // (null defaults to $this->defaultMinReadWordsWordSize, set to 4)
   $minReadWordsWordSize = 4, //(minimum length of the words read from the Dictionary source)
-  $prng = new synapp\info\tools\CryptoSecurePRNG() // the pseudoaleatory random generator (CryptoSecurePRNG by default)
+  // the pseudoaleatory random generator (new CryptoSecurePRNG() by default)
+  $prng = new synapp\info\tools\CryptoSecurePRNG() 
 );
 
 // generatePassword method takes almost the same parameters as the contructor:
