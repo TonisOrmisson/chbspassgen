@@ -87,17 +87,25 @@ $password = $passwordGenerator->generatePassword(
   $level = 1,             // specify further parameters like this one
   $separators = '_ -',    // and this one
   $useVariations = true,  // and this one
-  $variations = array(    // and this one too (also works in the constructor)
+  $variations = array(    // and this one too (This system also works in the constructor)
     'allcaps'=>true,
     'capitalize'=>true
   ) 
 );
 
 
-// getEntropy can return a pretty accurate estimate of the entropy of the last generated password, but can also be given a password and a set of parameters to extract its entropy
-// (the interface I came up with is crazy weird, I'll rebuild it with a more intuitive and practical parameter list as soon as I can...)
+// getEntropy can return a pretty accurate estimate of the entropy of the last generated 
+// password, but can also be given a password and a set of parameters to extract its entropy
+// (the interface I came up with is crazy weird, so I won't even bother to explain it. I'll 
+// just rebuild it in a more intuitive and practical way as soon as I can...)
 
-$entropy = $passwordGenerator->getEntropy($password, $dictionary = null, $variationsCount = null, $lastOrSeparator = true, $separatorsCount = null);
+$entropy = $passwordGenerator->getEntropy(
+ $password, 
+ $dictionary = null, 
+ $variationsCount = null, 
+ $lastOrSeparator = true, 
+ $separatorsCount = null
+);
 
 
 ```
