@@ -6,7 +6,7 @@ chbspassgen
  Copyright (C) 2014 Gael Abadin<br/>
  License: [MIT Expat][1]
  
-![chbspassgen password generator test site snapshot with default settings](http://i.imgur.com/sq2bNOa.png "This is how chbspassgen's test web app looks like. Check it out on https://synapp.info/password-generator ;-) )")
+![chbspassgen password generator test site snapshot with default settings](http://i.imgur.com/ahbMwZo.png "This is how chbspassgen's test web app looks like. Check it out on https://synapp.info/password-generator ;-) )")
 
  
 ### Motivation
