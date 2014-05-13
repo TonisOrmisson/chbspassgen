@@ -29,9 +29,9 @@ blocks, I promise...)
 Basic usage:
 
 ```php
-require_once 'CryptoSecurePRNG.php';
-require_once 'DictionaryInterface.php';
-require_once 'Dictionary.php';
+require_once 'cryptosecureprng/CryptoSecurePRNG.php';
+require_once 'dictionary/DictionaryInterface.php';
+require_once 'dictionary/Dictionary.php';
 require_once 'PasswordGeneratorAbstract.php';
 require_once 'PasswordGenerator.php';
 
@@ -76,7 +76,7 @@ $passwordGenerator = new synapp\info\tools\passwordgenerator\PasswordGenerator(
   // (null defaults to $this->defaultMinReadWordsWordSize, set to 4)
   $minReadWordsWordSize = 4, //(minimum length of the words read from the Dictionary source)
   // the pseudoaleatory random generator (new CryptoSecurePRNG() by default)
-  $prng = new synapp\info\tools\CryptoSecurePRNG() 
+  $prng = new synapp\info\tools\passwordgenerator\cryptosecureprng\CryptoSecurePRNG() 
 );
 
 // generatePassword method takes almost the same parameters as the contructor:
@@ -115,7 +115,7 @@ Check the code (or generate the docs using phpdocumentor) if you want more info 
 ### Webapp
 
 There is also available a little test web app ([passgenController.php][3], [passgenClientController.js][4] and [password_generator.html][5]) 
-you can load by uploading all the files to a public folder on your web server and poiting your browser to password_generator.html
+you can load by uploading all the files to a public folder on your web server and pointing your browser to password_generator.html
 
 Here is a demo: https://synapp.info/password-generator
 
@@ -140,6 +140,6 @@ Have fun.-
 
 [1]: https://raw.githubusercontent.com/elcodedocle/chbspassgen/master/LICENSE
 [2]: http://xkcd.com/936/
-[3]: https://github.com/elcodedocle/chbspassgen/blob/master/passgenController.php
-[4]: https://github.com/elcodedocle/chbspassgen/blob/master/passgenClientController.js
-[5]: https://github.com/elcodedocle/chbspassgen/blob/master/password_generator.html
+[3]: https://github.com/elcodedocle/chbspassgen/blob/master/webapp/passgenController.php
+[4]: https://github.com/elcodedocle/chbspassgen/blob/master/webapp/passgenClientController.js
+[5]: https://github.com/elcodedocle/chbspassgen/blob/master/webapp/password_generator.html
