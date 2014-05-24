@@ -20,7 +20,7 @@ abandoned intention of TDD implementing unit tests before the actual code (yeah,
 time and increases quality, but I'm too lazy for that unless I am being paid by the hour, which is 
 an interesting contradiction...).
 
-Anyway, somehow I ended up turning a perfectly fine 200 linesscript I had crafted with care into 
+Anyway, somehow I ended up turning a perfectly fine 200 lines script I had crafted with care into 
 this monstruosity with phpdoc blocks that will make you want to poke your eyes out (I'll fix those 
 blocks, I promise...)
 
@@ -121,7 +121,7 @@ Here is a demo: https://synapp.info/password-generator
 
 ### Web app pitfalls 
 
-Well, the web app is just a proof of concept and it was designed in the simplest possible way. That means efficiency or performance were not taken on account at all. A quick benchmark shows an Amazon EC2 micro instance is only able to handle a maximum of about 6 requests per second, mainly on account of the dictionary class being instantiated on each and every request and making a system call to read the words file on each and every instantiation (one would think that's the kind of thing to be automagically optimized on the fly in 2014, but whatever... Not my first deception about living in the 21st century, after all). Anyhow, if you want to build a production ready web app using chbspassgen, check out this for a few suggestions and more info on how to work around this issue: http://stackoverflow.com/questions/23846611/oo-php-service-performance
+Well, the web app is just a proof of concept and it was designed in the simplest possible way. That means efficiency or performance were not taken on account at all. A quick benchmark shows an Amazon EC2 micro instance is only able to handle a maximum of about 10.2 requests per second, mainly on account of the dictionary class being instantiated on each and every request and making a system call to read the words file on each and every instantiation (one would think that's the kind of thing to be automagically optimized on the fly in 2014, but whatever... Not my first deception about living in the 21st century, after all). Anyhow, if you want to build a production ready web app using chbspassgen, check out this for a few suggestions and more info on how to work around this issue: http://stackoverflow.com/questions/23846611/oo-php-service-performance
 
 ### Acks
 
