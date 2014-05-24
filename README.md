@@ -119,6 +119,10 @@ you can load by uploading all the files to a public folder on your web server an
 
 Here is a demo: https://synapp.info/password-generator
 
+### Webapp Pitfalls 
+
+Well, the webapp is just a proof of concept and it was designed in the simplest possible way. That means efficiency or performance were not taken on account at all. A quick benchmark shows an Amazon micro instance is only able to handle a maximum of about 6 requests per second, mainly on account of the dictionary class being instantiated on each and every request and making a system call to read the words file on each and every instantiation (one would think that's the kind of thing to be automagically optimized on the fly in 2014, but whatever. Not my first deception about living in the 21st century after all...). Anyhow, if you want to build a production ready webapp using chbspassgen check out this for a few suggestions and more info on how to work around this issue: http://stackoverflow.com/questions/23846611/oo-php-service-performance
+
 ### Acks
 
 Caffeine. (Seriously, I did this project on a single night of insomnia. Stupid coffee and tea are to blame.)
