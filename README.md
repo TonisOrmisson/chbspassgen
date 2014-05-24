@@ -112,16 +112,16 @@ $entropy = $passwordGenerator->getEntropy(
 
 Check the code (or generate the docs using phpdocumentor) if you want more info on tweaks and available parameters.
 
-### Webapp
+### Web app
 
 There is also available a little test web app ([passgenController.php][3], [passgenClientController.js][4] and [password_generator.html][5]) 
 you can load by uploading all the files to a public folder on your web server and pointing your browser to password_generator.html
 
 Here is a demo: https://synapp.info/password-generator
 
-### Webapp Pitfalls 
+### Web app pitfalls 
 
-Well, the webapp is just a proof of concept and it was designed in the simplest possible way. That means efficiency or performance were not taken on account at all. A quick benchmark shows an Amazon micro instance is only able to handle a maximum of about 6 requests per second, mainly on account of the dictionary class being instantiated on each and every request and making a system call to read the words file on each and every instantiation (one would think that's the kind of thing to be automagically optimized on the fly in 2014, but whatever. Not my first deception about living in the 21st century after all...). Anyhow, if you want to build a production ready webapp using chbspassgen check out this for a few suggestions and more info on how to work around this issue: http://stackoverflow.com/questions/23846611/oo-php-service-performance
+Well, the web app is just a proof of concept and it was designed in the simplest possible way. That means efficiency or performance were not taken on account at all. A quick benchmark shows an Amazon EC2 micro instance is only able to handle a maximum of about 6 requests per second, mainly on account of the dictionary class being instantiated on each and every request and making a system call to read the words file on each and every instantiation (one would think that's the kind of thing to be automagically optimized on the fly in 2014, but whatever... Not my first deception about living in the 21st century, after all). Anyhow, if you want to build a production ready web app using chbspassgen, check out this for a few suggestions and more info on how to work around this issue: http://stackoverflow.com/questions/23846611/oo-php-service-performance
 
 ### Acks
 
