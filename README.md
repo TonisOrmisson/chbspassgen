@@ -4,7 +4,8 @@ chbspassgen
 #####*generate strong passwords you can easily remember, with lots of entropy and stuff*
 
  Copyright (C) 2014 Gael Abadin<br/>
- License: [MIT Expat][1]
+ License: [MIT Expat][1]<br />
+ [![Code Climate](https://codeclimate.com/github/elcodedocle/chbspassgen.png)](https://codeclimate.com/github/elcodedocle/chbspassgen)
  
 ![chbspassgen password generator test site snapshot with default settings](http://i.imgur.com/ahbMwZo.png "This is how chbspassgen's test web app looks like. Check it out on https://synapp.info/password-generator ;-) )")
 
